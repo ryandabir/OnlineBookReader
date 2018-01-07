@@ -10,7 +10,6 @@ public class User {
 
     public User(String usernameInput, Name nameInput, GregorianCalendar expirationDateInput, boolean activeInput) {
         username = usernameInput;
-
         name = nameInput;
         expirationDate = expirationDateInput;
         active = activeInput;

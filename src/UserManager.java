@@ -25,4 +25,11 @@ public class UserManager {
             System.out.println("User does not exist, cannot delete.");
         }
     }
+
+    public boolean isUserValid(String username) {
+        if(userList.containsKey(username)) {
+            return true;
+        }
+        return false;
+    }
 }
