@@ -5,11 +5,19 @@ public class User {
     private Name name;
     private GregorianCalendar expirationDate;
     private boolean active;
+    private String username;
 
-    public User(Name NameInput, GregorianCalendar expirationDateInput, boolean activeInput) {
-        name = NameInput;
+
+    public User(String usernameInput, Name nameInput, GregorianCalendar expirationDateInput, boolean activeInput) {
+        username = usernameInput;
+
+        name = nameInput;
         expirationDate = expirationDateInput;
         active = activeInput;
+    }
+
+    public String getUserName() {
+        return username;
     }
 
     public String getFirstName() {
